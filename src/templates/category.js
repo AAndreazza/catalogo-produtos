@@ -35,6 +35,8 @@ const Category = ({ data }) => {
     )
 }
 
+// "Adicionar para o orçamento" poderia ser direcionado ao whatsapp
+
 export const pageQuery = graphql`
     query ($slug: String!) {
             products: allContentfulProduct(filter: {categories: {elemMatch: {slug: {eq: $slug}}}}
